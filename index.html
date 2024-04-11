@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock with Stopwatch</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/9bc08b0e45.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+<body id="bgcolor" class="bg-black m-0 p-0 overscroll-none">
+    <div>
+        <label for="switch" class="flex w-32 h-12 m-5 rounded-full cursor-pointer bg-slate-900 relative">
+            <input id="switch" type="checkbox" class="appearance-none cursor-pointer" onclick="theme()">
+            <span></span>
+        </label>
+        <script src="./script/mode.js"></script>
+    </div>
+    
+    <div class="block" id="watch">
+        <div id="Clock" class="w-[68%] mx-auto mt-[10%] py-[4%] px-[2%] align-middle text-9xl font-black text-white rounded-3xl"> </div>
+        <script src="./script/time.js"></script>
+    </div>
+    <br>
+
+    <div class="ml-[40vw]" id="tostopwatch">
+        <button class="bg-gray-500 p-5 font-extrabold text-2xl rounded-lg" onclick="watchandstop()">
+            <i class="fa-solid fa-stopwatch"></i> STOP WATCH
+        </button>
+        <script src="./script/switch.js"></script>
+    </div>
+</body>
+</html>
